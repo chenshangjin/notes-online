@@ -15,21 +15,47 @@
 
 ### Python
 
-添加阿里云镜像源
+#### **0.添加阿里云镜像源**
 
 `pip config --global set  global.index-url https://mirrors.aliyun.com/pypi/simple/`
+
+或者临时指定镜像源：`pip install -i https://pypi.tuna.tsinghua.edu.cn/simple  <somepacket>`
+
+其他镜像源：
+
+清华 `https://pypi.tuna.tsinghua.edu.cn/simple`
+
+中国科技大学 `https://pypi.mirrors.ustc.edu.cn/simple/`
+
+默认镜像源 `https://pypi.org/simple`
 
 ### Anaconda
 
 Conda是一种流行的Python包管理工具，它可以用于管理Python环境和包。
 
-添加清华大学镜像源
+#### **0.添加清华大学镜像源**
 
 `conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/`
 
 `conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/`
 
 `conda config --set show_channel_urls yes`
+
+#### **1.创建环境**
+
+`conda create -n testProject python=3.8`
+
+#### **2.激活环境**
+
+`conda activate testProject`
+
+#### **3.退出环境**
+
+`conda deactivate`
+
+#### **4.查看已安装的包**
+
+`conda list`
 
 ### CUDA
 
